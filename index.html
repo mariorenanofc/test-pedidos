@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Faça seu Pedido</h1>
+        <form id="pedido-form">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco" required><br><br>
+            
+            <label for="itens">Escolha os itens:</label><br>
+            <input type="checkbox" id="hamburguer" name="itens" value="x-bacon">
+            <label for="hamburguer">X-Bacon</label><br>
+            <input type="checkbox" id="x-salada" name="itens" value="x-salada">
+            <label for="x-salada">X-Salada</label><br>
+            <input type="checkbox" id="coca-cola" name="itens" value="Coca cola lata 250ml">
+            <label for="coca-cola">Coca-Cola Lata 250ml</label><br><br>
+            
+            <button type="button" onclick="finalizarPedido()">Finalizar Pedido</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
